@@ -2,8 +2,6 @@
     text-decoration: none;
 }
 body {
-    width: 100%;
-    min-height: 200px;
     overflow-x: hidden;
 }
 
@@ -266,8 +264,8 @@ body {
 
 /* Project */
 .project {
-    position: fixed;
-    margin-top: 7rem;
+    position: absolute;
+    margin-top: 10vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -277,10 +275,10 @@ body {
 .myproject {
     font-family: montserrat;
     font-weight: 900;
-    font-size: 4rem;
-    align-items: center;
+    font-size: 4.5rem;
     position: absolute;
     top: 0;
+    margin-top: 1rem;
     background: linear-gradient(to right, #780292, #ff5fcf );
     -webkit-background-clip: text;
     background-clip: text;
@@ -305,40 +303,58 @@ body {
     gap: 10rem;
 }
 .desain {
-    background-color: orange;
+    background: linear-gradient(to bottom, #2BB9F6, #3F60B5);
     width: 17rem;
-    height: 20rem;
-    border-radius: 2rem;
+    height: 23rem;
+    border-radius: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: montserrat;
+    font-family: JapaneseBrush;
+    font-weight: 200;
     color: white;
     font-size: 1.5rem;
+    z-index: 100;
+}
+.desain-teks {
+    z-index: 20;
+}
+.bingkai-desain {
+    position: absolute;
+    filter: drop-shadow(10px 10px 2px rgba(0, 0, 0, .3));
+    z-index: 0;
 }
 .videografi {
     background-color: orange;
     width: 17rem;
-    height: 20rem;
+    height: 23rem;
     border-radius: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: montserrat;
+    font-family: jura;
     color: white;
     font-size: 1.5rem;
 }
-.other {
-    background-color: orange;
+.programming {
+    background-color: #232323;
     width: 17rem;
-    height: 20rem;
+    height: 23rem;
     border-radius: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: montserrat;
-    color: white;
+    font-family: quantico;
+    color: #FFFF90;
     font-size: 1.5rem;
+}
+.programming span {
+    color: #FB00BC;
+}
+.titik-3 {
+    position: absolute;
+    align-self: flex-start;
+    translate: -4.5rem 1rem;
 }
 
 
@@ -351,7 +367,12 @@ body {
 
 
 
-
+@font-face {
+    font-family: JapaneseBrush;
+    src: url(font/JAPAB.TTF) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 /* Media Queries */
 

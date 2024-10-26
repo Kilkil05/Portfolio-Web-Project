@@ -1,0 +1,78 @@
+
+/* Project */
+.project {
+    position: fixed;
+    margin-top: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+
+}
+.myproject {
+    font-family: montserrat;
+    font-weight: 900;
+    font-size: 4rem;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    background: linear-gradient(to right, #780292, #ff5fcf );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    transition: 0.3s;
+}
+.myproject:hover {
+    background: linear-gradient(to right,#ff8d21 , #780292);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    transition: linear 2s;
+}
+.daftar-project {
+    display: flex;
+    position: relative;
+    width: 100vw;
+    height: 23rem;
+    top: 10rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10rem;
+}
+.desain {
+    background-color: orange;
+    width: 17rem;
+    height: 21rem;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: montserrat;
+    color: white;
+    font-size: 1.5rem;
+}
+.videografi {
+    background-color: orange;
+    width: 17rem;
+    height: 21rem;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: montserrat;
+    color: white;
+    font-size: 1.5rem;
+}
+.other {
+    background-color: orange;
+    width: 17rem;
+    height: 21rem;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: montserrat;
+    color: white;
+    font-size: 1.5rem;
+}
+
