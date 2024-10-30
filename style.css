@@ -8,6 +8,9 @@ body {
     justify-content: center;
     align-items: center;
 }
+a {
+    text-decoration: none;
+}
 .aova {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
@@ -590,4 +593,61 @@ translate: 0 2rem;
 
 .custom-button:hover {
     background-color: #ca009e;
+}
+
+
+
+/* Contact me */
+
+.contactme-body {
+    background-color: #eed600;
+}
+.contactme {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    flex-direction: column;
+}
+.contactme-teks {
+    font-family: poppins;
+    text-align: center;
+}
+#contactme {
+    font-size: 3rem;
+}
+.logo {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+.logo-button {
+    width: 20rem;
+    height: 3rem;
+    background-color: white;
+    border-radius: 2rem;
+    font-family: montserrat;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 700;
+    gap: 1rem;
+}
+.wa {
+    color: green;
+    gap: 0.5rem;
+}
+#ig {
+    background: linear-gradient(to right, rgb(47, 0, 156)0%, rgb(233, 0, 221)60%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.email {
+    color: rgb(182, 0, 0);
+}
+.linkedin {
+    color: #393ba3;
 }
