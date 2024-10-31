@@ -2,6 +2,10 @@ body {
     margin-left: 0;
     margin-right: 0;
 }
+p, div, img, h1, h2 {
+    animation: fade-in auto linear;
+    animation-timeline: view();
+}
 
 .aboutme-container {
     width: 100vw;
@@ -98,6 +102,7 @@ translate: 0 2rem;
     justify-content: center;
     align-items: center;
     width: 100vw;
+    
 }
 .skill-grafik-container {
     display: flex;
@@ -110,12 +115,16 @@ translate: 0 2rem;
     margin-left: auto;
     margin-right: auto;
     filter: drop-shadow(5px 8px 3px rgba(0, 0, 0, 0.295));
+
+
 }
 .coreldraw {
     display: flex;
     justify-content: center;
     align-items: flex-end;
     z-index: 1;
+    cursor: pointer;
+
 }
 .skill-bar-corel {
     height: 4rem;
@@ -142,6 +151,7 @@ translate: 0 2rem;
     justify-content: center;
     align-items: flex-end;
     z-index: 1;
+    cursor: pointer;
 }
 .skill-bar-photoshop {
     height: 4rem;
@@ -168,6 +178,7 @@ translate: 0 2rem;
     justify-content: center;
     align-items: flex-end;
     z-index: 1;
+    cursor: pointer;
 }
 .skill-bar-premiere {
     height: 4rem;
@@ -194,6 +205,7 @@ translate: 0 2rem;
     justify-content: center;
     align-items: flex-end;
     z-index: 1;
+    cursor: pointer;
 }
 .skill-bar-ae {
     height: 4rem;
@@ -220,6 +232,7 @@ translate: 0 2rem;
     justify-content: center;
     align-items: flex-end;
     z-index: 1;
+    cursor: pointer;
 }
 .skill-bar-ibis {
     height: 4rem;
@@ -246,6 +259,7 @@ translate: 0 2rem;
     justify-content: center;
     align-items: flex-end;
     z-index: 1;
+    cursor: pointer;
 }
 .skill-bar-365 {
     height: 4rem;
@@ -272,6 +286,7 @@ translate: 0 2rem;
     justify-content: center;
     align-items: flex-end;
     z-index: 1;
+    cursor: pointer;
 }
 .skill-bar-figma {
     height: 4rem;
@@ -298,6 +313,7 @@ translate: 0 2rem;
     justify-content: center;
     align-items: flex-end;
     z-index: 1;
+    cursor: pointer;
 }
 .skill-bar-htmlcss {
     height: 4rem;
@@ -324,6 +340,7 @@ translate: 0 2rem;
     justify-content: center;
     align-items: flex-end;
     z-index: 1;
+    cursor: pointer;
 }
 .skill-bar-pc {
     height: 4rem;
@@ -350,6 +367,7 @@ translate: 0 2rem;
     justify-content: center;
     align-items: flex-end;
     z-index: 1;
+    cursor: pointer;
 }
 .skill-bar-java {
     height: 4rem;
@@ -376,6 +394,7 @@ translate: 0 2rem;
     justify-content: center;
     align-items: flex-end;
     z-index: 1;
+    cursor: pointer;
 }
 .skill-bar-comunicate {
     height: 4rem;
@@ -402,6 +421,7 @@ translate: 0 2rem;
     justify-content: center;
     align-items: flex-end;
     z-index: 1;
+    cursor: pointer;
 }
 .skill-bar-problemsolve {
     height: 4rem;
@@ -468,12 +488,29 @@ translate: 0 2rem;
     background-color: white;
     border-radius: 3rem;
     overflow: hidden;
+}
+.p-desain {
+    font-family: poppins;
+    margin: 0rem;
+    translate: 0 10rem;
+    transition: 1s;
+    z-index: 4;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 238, 0, 0.877) 20%);
+    height: 30rem;
+}
 
-
+.desainer {
+    translate: -1rem 5rem;
+    z-index: 1;
 }
 .desain-exp:hover{
-    .desain-paragraf {
-        translate: 0 8rem;
+    .p-desain {
+        translate: 0 -10rem;
+        z-index: 1;
+    }
+    .desain-paragraf{
+        translate: 0 1rem;
+        z-index: 1;
     }
 
 }
@@ -484,13 +521,16 @@ translate: 0 2rem;
 .desain-paragraf {
     font-family: poppins;
     margin: 1rem;
-    translate: 0 27rem;
+    translate: 0 0rem;
     transition: 1s;
+    z-index: 4;
+    
 }
 .keterangan-desain-exp {
     font-family: montserrat;
     text-align: center;
     font-weight: 800;
+    z-index: 3;
 }
 
 .teknisi-exp {
@@ -502,14 +542,28 @@ translate: 0 2rem;
 }
 .teknisi-exp:hover {
     .teknisi-paragraf {
-        translate: 0 10rem;
+        translate: 0 5rem;
     }
+    .p-teknisi {
+        translate: 0 -23rem;
+        z-index: 1;
+    }
+}
+.p-teknisi {
+    font-family: poppins;
+    margin: 0rem;
+    transition: 1s;
+    z-index: 4;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 238, 0, 0.877) 20%);
+    height: 30rem;
 }
 .teknisi-paragraf {
     font-family: poppins;
     margin: 1rem;
-    translate: 0 27rem;
     transition: 1s;
+}
+.teknisi {
+    translate: -2rem;
 }
 .frontend-exp {
     height: 30rem;
@@ -521,7 +575,11 @@ translate: 0 2rem;
 
 .frontend-exp:hover {
     .frontend-paragraf {
-        translate: 0 13rem;
+        translate: 0 4rem;
+    }
+    .p-frontend {
+        translate: 0 -20rem;
+        z-index: 1;
     }
 }
 .frontend-paragraf {
@@ -529,6 +587,23 @@ translate: 0 2rem;
     margin: 1rem;
     translate: 0 27rem;
     transition: 1s;
+}
+.frontend-png {
+    translate: -4rem 0.5rem;
+    z-index: -1;
+}
+.p-frontend {
+    font-family: poppins;
+    margin: 0rem;
+    transition: 1s;
+    z-index: 4;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 238, 0, 0.877) 20%);
+    height: 30rem;
+}
+.teks-exp {
+    color: white;
+    font-family: poppins;
+    font-size: 4rem;
 }
 
 .promosi {
@@ -594,6 +669,22 @@ translate: 0 2rem;
 .custom-button:hover {
     background-color: #ca009e;
 }
+
+
+/* animasi */
+@keyframes fade-in {
+from {
+    opacity: .3;
+    transform: scale(.5);
+}
+to {
+    opacity: 1;
+    transform: scale(1);
+}
+}
+
+
+
 
 
 
